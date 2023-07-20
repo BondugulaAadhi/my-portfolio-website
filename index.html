@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aadhi portfoloo Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Itim&family=Martian+Mono:wght@500&family=Sigmar&family=Source+Code+Pro:ital,wght@0,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/30cf64f7fa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container" id="home">
+        <nav class="navbar">
+          <div class="nav-logo">
+            <img src="images\aadhi_logo.png" class="nav-logo" alt="" />
+          </div>
+          <div>
+            <ul class="ul-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#portfolio">Works</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </div>
+        </nav>
+        <div class="header-text">
+            <p><span class="im">I,m</span> <span id="auto-type"></span></p>
+          <h1 class="my-4">
+            Hi,my self <span>Bondugula</span> Aadhi, <br />From Hyderabad
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <img src="images\user.png" alt="" />
+          </div>
+          <div class="col-2 p-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+              officiis harum dignissimos aliquam dolor, similique omnis ducimus
+              perferendis architecto? Aliquid.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">Experince</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/Frontend Development</span><br />Website development
+                </li>
+                <li>
+                  <span>Resopnsive</span><br />Making a website responsive
+                </li>
+                <li><span>Boostrap</span><br />Css Frame work</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="education">
+              <ul>
+                <li><span>Qualification</span><br />Pursuing Cs-degree </li>
+                <li>
+                  <span>10th-cgpa <br></span>88%<br />
+                </li>
+                <li><span>inter-cgpa</span><br />89.3% from srjc</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="experience">
+              <ul>
+                <li><span>Programming Languages known</span><br />Html,css,js,React,c,c++ and java</li>
+                <li>
+                  <span>Experince</span><br />Fresher
+                </li>
+                <li><span>Projects</span><br />projects including e-commerse,clones,etc...</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div>
+        <h1 class="sub-title my-5">My Services</h1>
+      </div>
+      <div class="container">
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2 class="my-2"><span>Web</span> Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2 class="my-2"><span>React</span> projects</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-crop"></i>
+            <h2 class="my-2"><span>App</span> Development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              s
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio" class="my-5">
+      <div class="container">
+        <h1>My Works</h1>
+        <div class="works-list my-3">
+          <div class="works">
+            <img src="images\work-1.png" alt="" />
+            <div class="work-info">
+              <h3 class="my-3">E-Commerce</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="works">
+            <img src="images\work-2.png" alt="" />
+            <div class="work-info">
+              <h3 class="my-3">Web Apps</h3>
+              <!-- /*here you can keep your websites/* -->
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="works">
+            <img src="images\work-3.png" alt="" />
+            <div class="work-info">
+              <h3 class="my-3">portfolio</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-danger see-more my-2 d-flex justify-content-center align-items-center"
+        >
+          See More
+        </button>
+      </div>
+    </div>
+    <div id="contact" class="my-5">
+      <h1 class="my-5">Contact Form</h1>
+      <div class="container">
+        <div class="row1">
+          <p><span > <i class="fa-solid fa-envelope"></i> mail:</span>aadhibondugula@gmail.com</p>
+          <p><span><i class="fa-solid fa-phone-volume"></i> Phone:</span>0000000000</p>
+          <div class="social-media my-5">
+            <a href="#"><i class="fa-brands fa-linkedin px-1"></i></a>
+            <a href="#"><i class="fa-brands fa-square-github px-1"></i></i></a>
+            <a href="#"><i class="fa-brands fa-instagram px-1"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook px-1"></i></a>
+          </div>
+        </div>
+        <div class="row2">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1"  class="form-label my-1"></label>
+                Email address :</label
+              >
+              <input
+              required
+                type="email"
+                class="form-control my-1"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter your email adress"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label my-1"
+                >Password :</label
+              >
+              <input
+                type="password"
+                class="form-control my-1"
+                id="exampleInputPassword1"
+                placeholder="password"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#auto-type", {
+  strings: ["UI Developer", "Frontend Developer", "Web Developer"],
+  typeSpeed: 100,
+  backSpeed: 50,
+  loop: true,
+});
+    </script>
+  </body>
+</html>
